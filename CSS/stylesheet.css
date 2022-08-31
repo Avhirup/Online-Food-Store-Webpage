@@ -1,0 +1,142 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variables */
+:root{
+    --navbar_height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 71px;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.48;
+}
+/* Navigation Bar: Logo Styling */
+#logo{
+    margin: 10px 16px;
+}
+#logo img{
+    width: 125px;
+    height: 73px;
+}
+/* Navigation Bar: Navigation Styling */
+#navbar ul{
+    display: flex;
+    padding-left: 250px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 19px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    border-radius: 17px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    /* border-radius: 20px; */
+    background-color: white;
+    color: black;
+}
+/* Home section styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 243px;
+    padding: 3px 201px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Services section */
+
+#services{
+    margin: 32px;
+    display: flex;
+    /* border: 3px solid black; */
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 13px;
+    margin: -7px 11px;
+    border-radius: 21px;
+    background-color: aliceblue;
+}
+#services .box img{
+        height: 118px;
+        display: block;
+        margin: auto;
+}
+
+/* Clients section */
+#client-section{}
+
+/* Utility class */
+.h-primary{
+    font-size: 2.1rem;
+    padding: 12px;
+    padding-top: 204px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    color: black;
+    padding: 10px 15px;
+    border: 3px solid white;
+    border-radius: 23px;
+    margin: 14px;
+    opacity: 0.7;
+    background-color: moccasin;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family: 'Qahiri', sans-serif;
+    transition-property: border;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: white;
+    opacity: 1;
+    border: 3px solid orange;
+}
+.center{
+    text-align: center;
+}
